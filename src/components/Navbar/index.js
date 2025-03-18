@@ -20,14 +20,14 @@ const Navbar = () => {
         </MobileIcon>
         <NavItems>
           <NavLink to="/">Projects</NavLink>
+          <NavLink to="/blogs">Blogs</NavLink>
           <NavLink to="/" onClick={() => window.open('https://your-portfolio-url.com', '_blank')}>Back to Portfolio</NavLink>
         </NavItems>
         {
           isOpen &&
           <MobileMenu isOpen={isOpen}>
-            <MobileLink to="/" onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Projects</MobileLink>
+            <MobileLink to="/" onClick={() => setIsOpen(!isOpen)}>Projects</MobileLink>
+            <MobileLink to="/blogs" onClick={() => setIsOpen(!isOpen)}>Blogs</MobileLink>
             <MobileLink onClick={() => {
               setIsOpen(!isOpen);
               window.open('https://your-portfolio-url.com', '_blank');

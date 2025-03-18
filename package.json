@@ -33,8 +33,9 @@
   },
   "scripts": {
     "build:projects": "node scripts/buildProjects.js",
-    "prebuild": "npm run build:projects",
-    "prestart": "npm run build:projects",
+    "build:blogs": "node src/components/Blogs/buildBlogs.js",
+    "prebuild": "npm run build:projects && npm run build:blogs",
+    "prestart": "npm run build:projects && npm run build:blogs",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
@@ -59,4 +60,7 @@
     ]
   }
 }
+
+
+
 
