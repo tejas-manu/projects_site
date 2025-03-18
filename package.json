@@ -2,6 +2,7 @@
   "name": "project_blog",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://tejas-manu.github.io/projects_site",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
@@ -58,3 +59,4 @@
     ]
   }
 }
+
