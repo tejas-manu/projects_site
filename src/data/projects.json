@@ -1,0 +1,111 @@
+[
+  {
+    "id": 1,
+    "title": "DevOps Automation Pipeline Demo 1",
+    "description": "A comprehensive CI/CD pipeline using Jenkins, Docker, and Kubernetes",
+    "image": "https://via.placeholder.com/400x250",
+    "tags": [
+      "DevOps",
+      "CI/CD",
+      "Kubernetes",
+      "Docker",
+      "Jenkins"
+    ],
+    "category": "DevOps",
+    "github": "https://github.com/yourusername/project1",
+    "webapp": "https://project1.yourdomain.com",
+    "content": "\n## Overview\nThis project implements a fully automated CI/CD pipeline for containerized applications.\n\n## Features\n- Automated build and test processes using Jenkins\n- Container orchestration with Kubernetes\n- Infrastructure as Code using Terraform\n- Monitoring with Prometheus and Grafana\n- Automated rollbacks on failure detection\n\n## Technologies\nJenkins, Docker, Kubernetes, Terraform, Prometheus, Grafana\n\n## Challenges\nThe main challenge was ensuring zero-downtime deployments while maintaining system integrity.\n\n## Outcome\nReduced deployment time by 70% and eliminated manual deployment errors.\n",
+    "details": {
+      "overview": "This project implements a fully automated CI/CD pipeline for containerized applications.",
+      "features": [
+        "Automated build and test processes using Jenkins",
+        "Container orchestration with Kubernetes",
+        "Infrastructure as Code using Terraform",
+        "Monitoring with Prometheus and Grafana",
+        "Automated rollbacks on failure detection"
+      ],
+      "technologies": [
+        "Jenkins",
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Prometheus",
+        "Grafana"
+      ],
+      "challenges": "The main challenge was ensuring zero-downtime deployments while maintaining system integrity.",
+      "outcome": "Reduced deployment time by 70% and eliminated manual deployment errors."
+    }
+  },
+  {
+    "id": 2,
+    "title": "Machine Learning Model Pipeline",
+    "description": "End-to-end ML pipeline for predictive analytics",
+    "image": "https://via.placeholder.com/400x250",
+    "tags": [
+      "Python",
+      "TensorFlow",
+      "MLOps",
+      "Data Science"
+    ],
+    "category": "Machine Learning",
+    "github": "https://github.com/yourusername/project2",
+    "webapp": "https://project2.yourdomain.com",
+    "content": "\n## Overview\nAn end-to-end machine learning pipeline that automates data preprocessing, model training, and deployment.\n\n## Features\n- Automated data preprocessing and feature engineering\n- Hyperparameter tuning with cross-validation\n- Model versioning and experiment tracking\n- Automated model deployment to production\n- A/B testing framework for model evaluation\n\n## Technologies\nPython, TensorFlow, Scikit-learn, MLflow, Docker\n\n## Challenges\nBalancing model complexity with inference speed for real-time predictions.\n\n## Outcome\nImproved prediction accuracy by 15% while maintaining sub-100ms inference times.",
+    "details": {
+      "overview": "An end-to-end machine learning pipeline that automates data preprocessing, model training, and deployment.",
+      "features": [
+        "Automated data preprocessing and feature engineering",
+        "Hyperparameter tuning with cross",
+        "validation",
+        "Model versioning and experiment tracking",
+        "Automated model deployment to production",
+        "A/B testing framework for model evaluation"
+      ],
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "Scikit-learn",
+        "MLflow",
+        "Docker"
+      ],
+      "challenges": "Balancing model complexity with inference speed for real-time predictions.",
+      "outcome": "Improved prediction accuracy by 15% while maintaining sub-100ms inference times."
+    }
+  },
+  {
+    "id": 3,
+    "title": "Cloud-Native Microservices Architecture",
+    "description": "Scalable microservices application deployed on AWS",
+    "image": "https://via.placeholder.com/400x250",
+    "tags": [
+      "Microservices",
+      "AWS",
+      "Cloud",
+      "API Gateway"
+    ],
+    "category": "Cloud",
+    "github": "https://github.com/yourusername/project3",
+    "webapp": "https://project3.yourdomain.com",
+    "content": "\n## Overview\nA cloud-native application built using microservices architecture and deployed on AWS.\n\n## Features\n- Event-driven architecture using AWS Lambda\n- API Gateway for service orchestration\n- Serverless database with DynamoDB\n- Automated scaling based on demand\n- Comprehensive monitoring and alerting\n\n## Technologies\nAWS Lambda, API Gateway, DynamoDB, CloudWatch, Terraform\n\n## Challenges\nDesigning for high availability while maintaining data consistency across services.\n\n## Outcome\nAchieved 99.99% uptime and reduced operational costs by 40%.",
+    "details": {
+      "overview": "A cloud-native application built using microservices architecture and deployed on AWS.",
+      "features": [
+        "Event",
+        "driven architecture using AWS Lambda",
+        "API Gateway for service orchestration",
+        "Serverless database with DynamoDB",
+        "Automated scaling based on demand",
+        "Comprehensive monitoring and alerting"
+      ],
+      "technologies": [
+        "AWS Lambda",
+        "API Gateway",
+        "DynamoDB",
+        "CloudWatch",
+        "Terraform"
+      ],
+      "challenges": "Designing for high availability while maintaining data consistency across services.",
+      "outcome": "Achieved 99.99% uptime and reduced operational costs by 40%."
+    }
+  }
+]

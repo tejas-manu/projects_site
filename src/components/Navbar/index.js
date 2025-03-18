@@ -1,0 +1,42 @@
+import React from 'react'
+import { Nav, NavLink, NavbarContainer, NavItems, MobileIcon, MobileMenu, MobileLink } from './Navbar_style'
+import { FaBars } from 'react-icons/fa';
+import { useTheme } from 'styled-components';
+import { Link } from 'react-router-dom';
+
+const Navbar = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
+  const theme = useTheme()
+  return (
+    <Nav>
+      <NavbarContainer>
+        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <h1 style={{ margin: 0, color: theme.primary }}>My Projects</h1>
+        </Link>
+        <MobileIcon>
+          <FaBars onClick={() => {
+            setIsOpen(!isOpen)
+          }} />
+        </MobileIcon>
+        <NavItems>
+          <NavLink to="/">Projects</NavLink>
+          <NavLink to="/" onClick={() => window.open('https://your-portfolio-url.com', '_blank')}>Back to Portfolio</NavLink>
+        </NavItems>
+        {
+          isOpen &&
+          <MobileMenu isOpen={isOpen}>
+            <MobileLink to="/" onClick={() => {
+              setIsOpen(!isOpen)
+            }}>Projects</MobileLink>
+            <MobileLink onClick={() => {
+              setIsOpen(!isOpen);
+              window.open('https://your-portfolio-url.com', '_blank');
+            }}>Back to Portfolio</MobileLink>
+          </MobileMenu>
+        }
+      </NavbarContainer>
+    </Nav>
+  )
+}
+
+export default Navbar

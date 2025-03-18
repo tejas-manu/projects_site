@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import { ThemeProvider } from "styled-components";
+import { useState } from "react";
+import { darkTheme, lightTheme } from './utils/Themes.js'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import styled from "styled-components";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+import ProjectDetails from "./components/ProjectDetails";
+import Footer from "./components/Footer";
 import './App.css';
 
+const Body = styled.div`
+  background-color: ${({ theme }) => theme.bg};
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+`
+
 function App() {
+  const [darkMode, setDarkMode] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <Router>
+        <Navbar />
+        <Body>
+          <Routes>
+            <Route path="/" element={<Projects />} />
+            <Route path="/project/:id" element={<ProjectDetails />} />
+          </Routes>
+          <Footer />
+        </Body>
+      </Router>
+    </ThemeProvider>
   );
 }
 
