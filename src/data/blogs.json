@@ -10,6 +10,6 @@
       "Web Development"
     ],
     "date": "2023-06-15",
-    "content": "\n## Introduction\nReact is a popular JavaScript library for building user interfaces. In this blog post, we'll cover the basics of React and how to get started with your first React application.\n\n## Setting Up Your Environment\nFirst, you'll need to install Node.js and npm. Then, you can create a new React application using Create React App:\n\n```bash\nnpx create-react-app my-app\ncd my-app\nnpm start\n```\n\n## Components in React\nReact is all about components. Here's a simple component example:\n\n```jsx\nfunction Welcome(props) {\n  return <h1>Hello, {props.name}</h1>;\n}\n```\n\n## Conclusion\nThis is just the beginning of your React journey. Stay tuned for more advanced topics in future posts!"
+    "content": "\r\n## Introduction\r\nReact is a popular JavaScript library for building user interfaces. In this blog post, we'll cover the basics of React and how to get started with your first React application.\r\n\r\n## Setting Up Your Environment\r\nFirst, you'll need to install Node.js and npm. Then, you can create a new React application using Create React App:\r\n\r\n```bash\r\nnpx create-react-app my-app\r\ncd my-app\r\nnpm start\r\n```\r\n\r\n## Components in React\r\nReact is all about components. Here's a simple component example:\r\n\r\n```jsx\r\nfunction Welcome(props) {\r\n  return <h1>Hello, {props.name}</h1>;\r\n}\r\n```\r\n\r\n## Conclusion\r\nThis is just the beginning of your React journey. Stay tuned for more advanced topics in future posts!"
   }
 ]

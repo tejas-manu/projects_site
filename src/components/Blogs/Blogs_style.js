@@ -52,26 +52,23 @@ export const Desc = styled.div`
 
 export const CardContainer = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   gap: 28px;
-  flex-wrap: wrap;
   margin-top: 30px;
+  width: 100%;
+  max-width: 800px;
 `;
 
 export const Card = styled.div`
-  width: 330px;
-  height: 390px;
+  width: 100%;
   background-color: ${({ theme }) => theme.card};
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 14px;
-  justify-content: space-between;
-  position: relative;
-  overflow: hidden;
+  padding: 20px;
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  flex-direction: row;
+  gap: 20px;
   transition: all 0.3s ease-in-out;
   &:hover {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
@@ -80,14 +77,21 @@ export const Card = styled.div`
   border: 0.1px solid ${({ theme }) => theme.primary};
   box-shadow: rgba(0, 120, 255, 0.15) 0px 4px 24px;
   cursor: pointer;
+  
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Image = styled.img`
-  width: 100%;
+  width: 280px;
   height: 180px;
-  background-color: ${({ theme }) => theme.white};
   border-radius: 10px;
   object-fit: cover;
+  
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const Tags = styled.div`
@@ -109,11 +113,10 @@ export const Tag = styled.span`
 `;
 
 export const Details = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 0px;
-  padding: 0px 2px;
+  justify-content: space-between;
+  flex: 1;
 `;
 
 export const DateText = styled.div`

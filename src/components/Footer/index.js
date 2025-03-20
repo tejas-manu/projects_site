@@ -9,6 +9,7 @@ const Footer = () => {
         <Logo>My Projects</Logo>
         <Nav>
           <NavLink to="/">Projects</NavLink>
+          <NavLink to="/blogs">Blogs</NavLink>
           <NavLink to="/" onClick={() => window.open('https://your-portfolio-url.com', '_blank')}>Back to Portfolio</NavLink>
         </Nav>
         <SocialMediaIcons>

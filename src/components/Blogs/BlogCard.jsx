@@ -17,15 +17,17 @@ const BlogCard = ({ blog }) => {
   return (
     <Card onClick={handleClick}>
       <Image src={blog.image} />
-      <Tags>
-        {blog.tags.map((tag, index) => (
-          <Tag key={index}>{tag}</Tag>
-        ))}
-      </Tags>
       <Details>
-        <DateText>{formatDate(blog.date)}</DateText>
-        <CardTitle>{blog.title}</CardTitle>
-        <Description>{blog.description}</Description>
+        <div>
+          <DateText>{formatDate(blog.date)}</DateText>
+          <CardTitle>{blog.title}</CardTitle>
+          <Description>{blog.description}</Description>
+        </div>
+        <Tags>
+          {blog.tags.map((tag, index) => (
+            <Tag key={index}>{tag}</Tag>
+          ))}
+        </Tags>
       </Details>
     </Card>
   )
