@@ -107,5 +107,24 @@
       "challenges": "Designing for high availability while maintaining data consistency across services.",
       "outcome": "Achieved 99.99% uptime and reduced operational costs by 40%."
     }
+  },
+  {
+    "id": 4,
+    "title": "Demo project",
+    "description": "THis is a demo project created to test the build function",
+    "image": "https://via.placeholder.com/400x250",
+    "tags": [
+      "Python",
+      "TensorFlow",
+      "MLOps",
+      "Data Science"
+    ],
+    "category": "Machine Learning",
+    "github": "https://github.com/yourusername/project2",
+    "webapp": "https://project2.yourdomain.com",
+    "content": "\r\n\r\n## Overview\r\nAn sample project created to test the build function.",
+    "details": {
+      "overview": "An sample project created to test the build function."
+    }
   }
 ]

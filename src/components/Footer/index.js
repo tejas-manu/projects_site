@@ -6,7 +6,14 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>My Projects</Logo>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <img 
+            src={`${process.env.PUBLIC_URL}/logo.png`} 
+            alt="Logo" 
+            style={{ height: '25px', marginRight: '10px' }} 
+          />
+          <Logo style={{ whiteSpace: 'nowrap' }}>From Code to Cloud</Logo>
+        </div>
         <Nav>
           <NavLink to="/">Projects</NavLink>
           <NavLink to="/blogs">Blogs</NavLink>

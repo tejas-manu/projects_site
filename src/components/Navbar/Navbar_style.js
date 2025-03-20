@@ -35,6 +35,7 @@ export const NavLogo = styled(Link)`
   justify-content: start;
   align-items: center;
   text-decoration: none;
+  white-space: nowrap;
   @media screen and (max-width: 640px) {
     padding: 0 0px;
   }

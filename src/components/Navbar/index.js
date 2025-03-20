@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLogo } from './Navbar_style'
 import { Nav, NavLink, NavbarContainer, NavItems, MobileIcon, MobileMenu, MobileLink } from './Navbar_style'
 import { FaBars } from 'react-icons/fa';
 import { useTheme } from 'styled-components';
@@ -11,7 +12,14 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <h1 style={{ margin: 0, color: theme.primary }}>My Projects</h1>
+          <NavLogo>
+            <img 
+              src={`${process.env.PUBLIC_URL}/logo.png`} 
+              alt="Logo" 
+              style={{ height: '30px', marginRight: '10px' }} 
+            />
+            <h1 style={{ margin: 0, color: theme.primary, whiteSpace: 'nowrap' }}>From Code to Cloud</h1>
+          </NavLogo>
         </Link>
         <MobileIcon>
           <FaBars onClick={() => {

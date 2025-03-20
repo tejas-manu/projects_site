@@ -23,6 +23,7 @@ export const Logo = styled.h1`
   font-weight: 600;
   font-size: 20px;
   color: ${({ theme }) => theme.primary};
+  white-space: nowrap;
 `;
 
 export const Nav = styled.div`
