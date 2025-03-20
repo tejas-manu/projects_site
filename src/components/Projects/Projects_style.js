@@ -58,21 +58,22 @@ export const CardContainer = styled.div`
   gap: 28px;
   flex-wrap: wrap;
   margin-top: 30px;
+  width: 100%;
 `;
 
 export const Card = styled.div`
-  width: 330px;
-  height: 390px;
+  width: 450px;
+  height: 420px;
   background-color: ${({ theme }) => theme.card};
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 14px;
+  padding: 18px;
   justify-content: space-between;
   position: relative;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
   transition: all 0.3s ease-in-out;
   &:hover {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
@@ -81,11 +82,17 @@ export const Card = styled.div`
   border: 0.1px solid ${({ theme }) => theme.primary};
   box-shadow: rgba(0, 120, 255, 0.15) 0px 4px 24px;
   cursor: pointer;
+  
+  @media (max-width: 960px) {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+  }
 `;
 
 export const Image = styled.img`
   width: 100%;
-  height: 180px;
+  height: 220px;
   background-color: ${({ theme }) => theme.white};
   border-radius: 10px;
   object-fit: cover;
