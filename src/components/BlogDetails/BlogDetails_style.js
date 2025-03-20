@@ -76,22 +76,22 @@ export const Tag = styled.span`
 `;
 
 export const BackButton = styled.button`
+  align-self: flex-start;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: ${({ theme }) => theme.primary};
+  border: 1px solid ${({ theme }) => theme.primary};
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 16px;
-  font-weight: 500;
-  color: ${({ theme }) => theme.text_primary};
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 16px;
-  padding: 8px 16px;
-  border-radius: 8px;
   transition: all 0.3s ease;
-  
+  margin-bottom: 20px;
   &:hover {
-    background-color: ${({ theme }) => theme.bg_secondary};
+    background-color: ${({ theme }) => theme.primary + 15};
   }
 `;
 
